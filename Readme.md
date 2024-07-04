@@ -46,6 +46,8 @@ DB_HOST=192.168.1.16  por  ejemplo
 # Enlace explicación del back
 https://drive.google.com/file/d/1XeeIGQJ1-wYXVIQDfBaQUqsCduudHCZ9/view?usp=sharing
 
+## Autores ✒️
+* **Esteban Correa Pereira** - *Desarrollador Full Stack* -  GitHub: [ingestebancorrea](https://github.com/ingestebancorrea)
 
 # Licencia
 Este proyecto está bajo la Licencia MIT.

@@ -1,10 +1,11 @@
 const { response, request } = require('express');
 const axios = require("axios");
+const dotenv = require('dotenv').config()
 
 const getRandomUsers = async(req = request, res = response) => {
 
     try{
-        const results = await axios.get("https://randomuser.me/api/?results=5");
+        const results = await axios.get(`${process.env.HOST_URL}?results=5`);
         const users = results.data.results;
 
         const transformedUsers = users.map(user => ({
@@ -37,7 +38,7 @@ const getRandomUsers = async(req = request, res = response) => {
 
 const getNamesFromRandomUsers = async (req = request, res = response) => {
     try {
-        const response = await axios.get('https://randomuser.me/api/?results=5');
+        const response = await axios.get(`${process.env.HOST_URL}?results=5`);
         const users = response.data.results;
 
         let fullNames = [];
